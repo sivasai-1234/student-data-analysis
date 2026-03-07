@@ -119,7 +119,21 @@ def main():
     plt.tight_layout()
 
     plt.show()
+    # Grade distribution chart
 
+    grade_counts = df["Grade"].value_counts()
+
+    plt.figure(figsize=(6,6))
+
+    plt.pie(
+        grade_counts,
+        labels=grade_counts.index,
+        autopct="%1.1f%%"
+    )
+
+    plt.title("Performance of the students")
+
+    plt.show()
 
 if __name__ == "__main__":
     main()
