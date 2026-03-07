@@ -1,25 +1,42 @@
-# Student Result Analysis System
+# Student Data Analysis System
 
-This project analyzes student academic performance using Python.
+A Python project that analyzes student academic performance and generates useful insights such as grades, rankings, statistics, and visualizations.
 
 ## Features
 
-- Calculates Mid marks
-- Calculates total marks
-- Assigns grades automatically
-- Determines pass or fail
-- Generates student ranking
-- Displays class statistics
-- Shows performance graph
+* Calculates mid marks using weighted average
+* Computes total marks
+* Automatically assigns grades
+* Determines pass or fail
+* Generates student ranking
+* Displays class statistics
+* Visualizes student performance with graphs
 
-## Technologies
+## Technologies Used
 
-Python
-Pandas
-Matplotlib
+* Python
+* Pandas
+* Matplotlib
 
-## Run the program
+## Project Structure
+
+student-data-analysis
+│
+├── analysis.py
+├── students.csv
+├── requirements.txt
+└── README.md
+
+## How to Run
+
+Install dependencies:
 
 pip install -r requirements.txt
 
+Run the program:
+
 python analysis.py
+
+## Example Output
+
+The program prints student rankings, class statistics, and displays a bar chart of total marks.
