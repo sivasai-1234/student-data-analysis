@@ -1,0 +1,11 @@
+# Generated files
+student_report.xlsx
+marks_chart.png
+grade_chart.png
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Excel temp files
+~$*.xlsx
