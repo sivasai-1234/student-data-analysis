@@ -95,6 +95,14 @@ def main():
     pass_percentage = (pass_count / total_students) * 100
 
     print("Pass Percentage :", round(pass_percentage,2), "%")
+    print("Top Student   :", top_student["Name"], "-", round(top_student["Total"],2))
+    # Top 3 Students Leaderboard
+    print("\n--- TOP 3 STUDENTS---")
+
+    top3 = df.head(3)
+
+    for i, row in top3.iterrows():
+        print(f"{row['Rank']}. {row['Name']} - {round(row['Total'],2)} marks")
 
     # =====================
     # GRADE DISTRIBUTION
